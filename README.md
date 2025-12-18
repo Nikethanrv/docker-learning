@@ -10,3 +10,9 @@ Docker image contains all the neccessary details, metadata for the docker contai
 Is used for persistent storage of data outside the container
 
 docker rm `docker ps -aq` --> To remove docker images
+
+### Data Pipeline
+A data pipeline produces some output for an input
+                          -> Parquet File (stores data in binary)
+CSV File -> Data Pipeline -> PostgreSQL Database
+                          -> Data warehouse
