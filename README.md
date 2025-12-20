@@ -16,3 +16,7 @@ A data pipeline produces some output for an input
                           -> Parquet File (stores data in binary)
 CSV File -> Data Pipeline -> PostgreSQL Database
                           -> Data warehouse
+
+# docker build -t test:pandas -> Building a docker image
+
+# docker run test:pandas -> Running a docker container from the image
