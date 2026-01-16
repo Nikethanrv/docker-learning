@@ -8,9 +8,11 @@ docker run -it --rm \
 postgres:18
 
 ### Connecting to Postgres
-TZ=UTC uv run pgcli -h localhost -p 5432 -u root -d ny_t
-axi
+TZ=UTC uv run pgcli -h localhost -p 5432 -u root -d ny_taxi
 
 ### Opening Jupyter Notebook
 uv add --dev jupyter
 uv run jupyter notebook
+
+### Converting Jupyter Notebook to a Script
+uv run jupyter nbconvert --to=script notebook.ipynb
